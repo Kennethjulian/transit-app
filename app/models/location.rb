@@ -1,5 +1,5 @@
 class Location < ApplicationRecord
-    gecoded_by :my_location
+    geocoded_by :my_location
     after_validation :geocode
     validates :address, presence: true
     validates :city, presence: true
